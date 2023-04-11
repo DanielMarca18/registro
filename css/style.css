@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #f1f1f1, #B8EED4);
+}
+
+.contenedor{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.contenedor .titulo{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.contenedor .titulo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #f1f1f1, #B8EED4);
+}
+
+.contenedor form .datos-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .datos-user .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.datos-user .input-box .datos{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.datos-user .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.datos-user .input-box input:focus,
+.datos-user .input-box input:valid{
+    border-color: #B8EED4;
+}
+
+form .generos .titulo-genero{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .generos .categoria{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.generos .categoria label{
+    display: flex;
+    align-items: center;
+}
+
+.generos .categoria .punto{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#punto-1:checked ~ .categoria label .uno,
+#punto-2:checked ~ .categoria label .dos,
+#punto-3:checked ~ .categoria label .tres{    
+    border-color: #d9d9d9;
+    background: #392c3e;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: #392c3e;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg,#f1f1f1, #B8EED4);
+}
+
+form .button input:hover{
+    background:linear-gradient(-135deg,#f1f1f1, #B8EED4) ;
+}
+

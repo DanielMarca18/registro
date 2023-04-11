@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="titulo">Registro</div>
+    <form class="formularioUsuario">
+        <div class="datos-user">
+            <div class="input-box">
+                <span class="datos">Nombre Completo</span>
+                <input type="text" placeholder="Ingresa tu Nombre" id="nombre" name="nombre">
+            </div>
+            <div class="input-box">
+                <span class="datos">Nombre de Usuario</span>
+                <input type="text" placeholder="Ingresa tu Usuario" id="nombreUsuario" name="nombreUsuario">
+            </div>
+            <div class="input-box">
+                <span class="datos">Email</span>
+                <input type="text" placeholder="Ingresa tu Email" id="email" name="email">
+            </div>
+            <div class="input-box">
+                <span class="datos">Número Teléfono </span>
+                <input type="text" placeholder="Ingresa tu Número" id="telefono" name="telefono">
+            </div>
+            <div class="input-box">
+                <span class="datos">Contraseña</span>
+                <input type="text" placeholder="Ingresa tu Contraseña" id="contrasena" name="contrasena">
+            </div>
+            <div class="input-box">
+                <span class="datos">Confirma Contraseña</span>
+                <input type="text" placeholder="Confirma tú Contraseña" id="confirmaContrasena" name="confirmaContrasena">
+            </div>
+        </div>
+        <div class="generos">
+            <input type="radio" name="genero" id="punto-1">
+            <input type="radio" name="genero" id="punto-2">
+            <input type="radio" name="genero" id="punto-3">
+            <span class="titulo-genero">Género</span>
+            <div class="categoria">
+                <label for="punto-1">
+                    <span class="punto uno"></span>
+                    <span class="genero">Mascúlino</span>
+                </label>
+                <label for="punto-2">
+                    <span class="punto dos"></span>
+                    <span class="genero">Femenino</span>
+                </label>
+                <label for="punto-3">
+                    <span class="punto tres"></span>
+                    <span class="genero">Prefiero no decir</span>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Registrate" class="btn-registro">
+        </div>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>  
+</body>
+</html>
